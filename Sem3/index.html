@@ -1,0 +1,31 @@
+<!DOCTYPE html "XHTML 1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <script SRC="scripts.js" defer></script> <!--    defer - отработка скрипта после загрузки страницы.-->
+--    <script SRC="helloAge.js" defer></script>
+<!--    <script SRC="salary.js" defer></script>-->
+    <script SRC="onclickBuy.js" defer></script>
+    <script SRC="puzzle.js" defer></script>
+    <script SRC="ternar.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form>
+        <button class="button" onclick="hello();">Познакомимся</button>
+        <button class="button" onclick="puzzle();">Загадка</button>
+        <button class="button" onclick="ternar();">Сравение чисел</button>
+        <button class="button" onclick="round5();">Ближайшее число</button>
+        <button class="button" onclick="weekDay();">День недели</button>
+        <button class="button" onclick="buy();">Купить</button>
+        <a class="button" onclick="if (confirm('Открыть YouTube')) {window.open('https://youtube.com');}"
+           target="_blank">YouTube</a>
+        <a class="button" onclick="if (confirm('Открыть Google')) {window.open('https://google.com');}  alert ('Отмена');"
+           target="_blank">Google</a>
+        <a class="button" onclick="if (confirm('Будет открыт файл exel')) {window.open('РТ_Карьера GB.xlsx');}"
+           target="_blank">Exel файл: pt- </a>
+    </form>
+</body>
+</html>
