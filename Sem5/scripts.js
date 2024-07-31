@@ -1,38 +1,30 @@
-
-const productP =
-{
-    id: 0,
-    name: "",
-    price: 0,
-    quantity: 0,
-    total: 0
+function createProduct(name, total) {
+    return {
+        name: name,
+        total: total
+    };
 }
 
-function product(name, price, quantity){
-
-    this.name = name;
-    this.price = price;
-    this.quantity = quantity;
-    this.total = price * quantity;
+function printList(productList) {
+    return productList.map(product => product.name).join(", ");
 }
 
-function createProduct() {
-    let  product1 = new product(prompt("Введите название продукта:", "стол"),
-        prompt("Введите цену:",  "123"),
-        prompt("Введите количество:", "1"));
-    return product1
-}
-function addProduct(){
+function addProduct() {
     const productList = [];
-    let  product1 = createProduct();
-    let  product2 = createProduct();
+    let product1 = createProduct("стол", 123);
+    let product2 = createProduct("стул", 456);
     productList.push(product1);
     productList.push(product2);
+
+    let totalSum = productList.reduce((sum, product) => sum + product.total, 0);
+
     console.log(product1);
     console.log(product2);
     console.log(productList);
-    alert(`${product1.name} и ${product2.name} добавлены в productList ${productList[0].name, productList[1].name} на сумму ${productList[0].total} + ${productList[1].total} = `);
+    alert(`${product1.name} и ${product2.name} добавлены в productList ${printList(productList)} на сумму ${product1.total} + ${product2.total} = ${totalSum}`);
 }
+
+
 ////////////////////////////////////////////////////////////
 const car = {
     make: "Audi",
@@ -57,6 +49,8 @@ const car = {
         }
     }
 }
+
+
 
 
 
