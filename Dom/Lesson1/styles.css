@@ -2,8 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c2fad8;
-    color: #043a2c;
+    background-color: #d5c2fa;
+    color: #240c60;
     /*background-image: url('img/programming.jpg');*/
     background-size: cover; /* Это свойство помогает изображению занимать весь фон, сохраняя пропорции */
     background-position: center; /* Центрирование изображения на фоне */
@@ -13,22 +13,16 @@ body {
     line-height: 1.5;
     letter-spacing: 0.3px;
 }
-h1 {
-    text-align: center;
-    font-size: 36px;
-    margin: 0;
-    padding: 0;
-}
 p {
     text-indent: 20px; /* Отступ первой строки абзаца */
 }
 
 header {
-    background-color:  #043a2c;
-    color: #c2fad8;
+    background-color: #240c60;
+    color: #d5c2fa;
     padding: 20px 0;
     text-align: center;
-    background: linear-gradient(to top  right, #c2fad8, #058866);
+    background: linear-gradient(to top  right, #a787f6, #240c60);
 }
 
 .header-content {
@@ -38,15 +32,15 @@ header {
     gap: 20px;
 }
 
-.button{
-    background-color: #c2fad8;
-    color: #043a2c;
+button, link{
+    background-color: #d5c2fa;
+    color: #4f319a;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
-    border: 3px solid  #043a2c;
+    border: 3px solid #4f319a;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
@@ -54,9 +48,9 @@ header {
     box-shadow: 5px 5px 20px rgba(7, 2, 2, 0.7);
 }
 
-.button:hover{
-    background-color: #c2fad8;
+button:hover{
+    background-color: #240c60;
     color: #d5c2fa;
     text-decoration: underline;
-    border: 3px solid #b0ffcf;
+    border: 3px solid #d5c2fa;
 }
