@@ -103,11 +103,8 @@ a{
 }
 
 img{
-    border-radius: 10px;
-    gap: 10px;
-    padding: 5px;
+    border-radius: 15px;
     margin: 20px;
-    border: 3px solid #a598fd;
     box-shadow: 10px 10px 30px rgba(7, 2, 2, 0.8);
     width: 20%;
     height: auto;
