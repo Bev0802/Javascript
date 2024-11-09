@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Шаблонизация и работа с JSON</title>
+        <link rel="stylesheet" type="text/css" href="../styles.css">
+        <script src="data.js" defer> </script>
+    </head>
+    <body>
+      <header>
+        <div class="header-content">
+          <div>
+            <h1>Шаблонизация и работа с JSON</h1>
+            <p>Продолжение JavaScript</p>
+          </div>
+        </div>
+      </header>
+      <div id="products-box"></div>  <!-- Контейнер для товаров -->
+        <script>
+            const productData = [
+                { name: 'Плашка', price: 150, quantity: 10 },
+                { name: 'Метчик', price: 200, quantity: 20 },
+                { name: 'Фреза', price: 500, quantity: 15 },
+                { name: 'Шуруп', price: 3, quantity: 100 }
+            ];
+
+            const productsContainer = document.getElementById('products-box');
+
+            productData.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.classList.add('product');
+
+                productDiv.innerHTML = `
+                <img class="product_img" src="photo.jpeg" alt="photo" width="20%" height="auto">
+                <div class="product_box">
+                    <a class="product_name" href="product.html">${product.name}</a>
+                    <p class="product_text">Описание: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p class="product_price">Цена: ${product.price}</p>
+                    <p class="product_quantity">Количество: ${product.quantity}</p>
+                </div>
+            `;
+
+
+                productsContainer.appendChild(productDiv);
+            });
+
+        </script>
+    </body>
+</html>
